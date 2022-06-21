@@ -167,15 +167,17 @@ nav .nav-item a:hover{
     color: #454545;
 }
 
-.img{
+.row1-col2 .img{
     background-color: #00008B;
     height: 300px;
     width: 300px;
     border-radius: 50%;
+
 }
 
-.img img{
-    border-radius: 50%;    
+.row1-col2 .img img{
+    border-radius: 50%;  
+    margin: 0;
 }
 
 #btns{
@@ -496,11 +498,3 @@ footer .submit{
 #ratings> *{
     margin-right: 8px;
 }
-
-/* #00008B -blue
-
-#FFA500 yellow
-
-#898989 ash
-
-font-family: 'Lato', sans-serif;*/
