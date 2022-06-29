@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="DOIT is a simple and easy to use task organizing tool. It is designed to help others stick to goals and facilitates easy collaboration and project managements.">
     <meta name="keywords" content="DOIT, task organizing tool, stick to goals, Manage your task, work tools with ease, different tasks, Carry out User Research, Draw User Wireframe, Draft User Persona">
-    <script src="https://kit.fontawesome.com/c0015e846f.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700;900&display=swap" rel="stylesheet">
@@ -16,6 +15,9 @@
 </head>
 <body>
     <header>
+        <div  class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="Logo" width="91" height="34"></a>
+        </div>
         <nav class="nav-bar">
             <ul class="nav-menu">
                 <li class="nav-item">
@@ -34,17 +36,22 @@
                     <a href="#">Teams</a>
                 </li>
             </ul>
-            <div  class="nav-item-">
-                <a href="index.html"><img src="images/logo.png" alt="Logo" width="91" height="34"></a>
-            </div>
-            <div class="nav-item_" style="float: right;">
+            
+            <div class="nav-item_">
                  <button class="btns">
                     <a href="#" style="color: #000045;">Sign up / Sign in</a>
                 </button>
             </div>
         </nav>
+        
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
     </header>
     
+
     <main class="row1">
         <div class="row1-col1">
             <h1>Achieve more with seamless planning <button id="btn-org">organise</button> </h1>
@@ -139,7 +146,8 @@
                 <img src="images/image1.png" alt="" width="350" height="350">
             </div>
             <div>
-                <img class="rect" src="images/Rectangle1.png" alt="">
+                
+                <div class="rect"><img  src="images/Rectangle1.png" alt=""></div>
                 <div id="btns" class="btn3">
                     <h3>Study UX comparison</h3>
                     <div class="check"><img src="images/check.png" alt="" width="12" height="9"></div>
@@ -158,8 +166,8 @@
 
     <section class="row4">
         <div class="row4-col1">
-            <img src="images/image2.png" alt="">
-            <img class="profile" src="images/Ellipse8.png" alt="">
+            <div class="img1" ><img src="images/image2.png" alt="" width="404" height="288"></div>
+            <div class="profile"><img  src="images/Ellipse8.png" alt=""></div>
             <div class="testimonial">
                 <h3>We love DOIT a lot, it helps us share our tasks and work progress which makes our jobs easy and enjoyable - Mofi and Kemi</h3>
             </div>
@@ -204,13 +212,15 @@
                 <li><a href="#">Support Center</a></li>
                 <li><a href="#">Security</a></li>
             </ul>
-            <ul style="flex: 30%;">
+            <ul class="subcribe-group">
                 <li style="margin-bottom: 20px;"><a class="head"  href="#">Subcribe</a></li>
                 <li><div class="subcribe">
                     <form>
                         <Input id="subcribe" type="email" name="email_address" placeholder="Email Address...">
                     </form>
-                    <div class="submit"><a href="#"><img id="submit" src="images/arrow4.png" alt="arrow" width="28" height="10"></a></div>
+                    <!-- <div class="submit"><a href="#"><img id="submit" src="images/arrow4.png" alt="arrow" width="28" height="10"></a></div> -->
+                    <button class="submit"><img id="submit" src="images/arrow4.png" alt="arrow" width="28" height="10"></button>
+                
                 </div></li>
                 <li>8/10 <br>
                     Overall rating
@@ -225,7 +235,8 @@
             </ul>
         </div>
     </footer>
-    
+
+
     <script src="Js/scrips.js"></script>
 </body>
 </html>
